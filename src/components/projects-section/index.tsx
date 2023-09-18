@@ -1,7 +1,6 @@
 import ProjectCard from "../project-card";
 import { SectionContainer } from "./style";
 import mainProjects from "./projects";
-// import { useNavigate } from "react-router-dom";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
@@ -30,7 +29,7 @@ const ProjectSection = () => {
         className="mySwiper"
       >
         {mainProjects.map((project, i) => (
-          <SwiperSlide>
+          <SwiperSlide key={`SwiperSlide-n°:${i}`}>
             <ProjectCard
               key={`Projeto-n°:${i}`}
               {...project}

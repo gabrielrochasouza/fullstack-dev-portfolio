@@ -2,8 +2,10 @@ import Logo from "../logo";
 import { Container } from "./style";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import BurgerMenu from "../burger-menu";
+import { useNavigate } from "react-router-dom";
 
 export const Header = () => {
+  const navigation = useNavigate();
 
   return (
     <Container>
@@ -13,6 +15,10 @@ export const Header = () => {
           data-aos-offset="-100"
           data-aos-once={"True"}
           className="logo"
+          onClick={()=>{
+            window.scrollTo(0,0)
+            navigation('/')
+          }}
         >
           <a href='#inicio'>
             <Logo />

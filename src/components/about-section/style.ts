@@ -1,8 +1,11 @@
 import styled from "styled-components";
+import ReactIcon from "../../assets/svg/react-icon.svg"
 
 export const AboutContainer = styled.section`
- 
-    background-color: var(--green-color);
+    background-size: contain;
+    background-image: url(${ReactIcon});
+    background-position: top center;
+    background-repeat: no-repeat;
     .about-me{
         min-height: 100vh;
         padding: 20px;
@@ -33,14 +36,6 @@ export const AboutContainer = styled.section`
                 gap: 0px;
                 padding: 50px 8px;
             }
-            p,li{
-                font-size: 1.15rem;
-                font-weight: 500;
-                color: var(--bg-primary);
-                @media (max-width:1079px) {
-                    font-size: 1rem;
-                }
-            }
             .techs{
                 list-style: circle;
                 li{
@@ -70,11 +65,17 @@ export const AboutContainer = styled.section`
             p{
                 margin: 20px 0 0;
                 font-family: var(--t-p);
-                
                 line-height: 1.3rem;
+                font-size: 1.15rem;
+                font-weight: 500;
+                @media (max-width:425px) {
+                }
                 @media (max-width:768px) {
-                    line-height: 1rem;
-                    
+                    font-size: 1.2rem;
+                    line-height: 1.3rem;
+                }
+                @media (max-width:1079px) {
+                    font-size: 1rem;
                 }
             }
         }
@@ -137,16 +138,17 @@ export const AboutContainer = styled.section`
                     cursor: pointer;
                     font-size: 37px;
                     transition: 200ms all;
+                    color: var(--green-color);
                     :hover{
                         transition: 200ms all;
-                        color: #000;
+                        color: #fff;
                     }
                 }
                 @media (max-width:768px) {
                     margin: 20px 0 0;
                     gap: 16px;
                     svg{
-                        font-size: 25px;
+                        font-size: 2.4rem;
                     } 
                 }
             }

@@ -1,4 +1,3 @@
-import { ScrollHook } from './hooks';
 import AOS from 'aos'
 import WhatsappFixed from './components/whatsapp-fixed-icon';
 import Routes from './routes';
@@ -6,6 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 import GlobalStyle from './styles/global';
 import { Header } from './components/header';
 import ScrollController from './components/scroll-controller';
+import { ScrollHook } from "./hooks";
 
 
 function App() {

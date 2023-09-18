@@ -3,10 +3,8 @@ import { IntroSection } from "../../components/intro-section";
 import AboutSection from "../../components/about-section";
 import ProjectSection from "../../components/projects-section";
 import ContactSection from "../../components/contact-section";
-import { ScrollHook } from "../../hooks";
 
 const MainPage = () => {
-  ScrollHook()
   return (
     <>
       <IntroSection/>
