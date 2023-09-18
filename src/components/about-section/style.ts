@@ -67,7 +67,7 @@ export const AboutContainer = styled.section`
                 font-family: var(--t-p);
                 line-height: 1.3rem;
                 font-size: 1.15rem;
-                font-weight: 500;
+                font-weight: 300;
                 @media (max-width:425px) {
                 }
                 @media (max-width:768px) {
