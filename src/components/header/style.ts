@@ -48,11 +48,11 @@ export const Container = styled.header`
                         border-radius: 5px;
                         border: 1px solid var(--green-color);
                         color: var(--green-color);
-                        :hover{
-                            transition: 1s all;
-                            background-color: var(--green-color);
-                            color:var(--bg-primary);
-                        }
+                    }
+                    :hover{
+                        transition: 1s all;
+                        background-color: var(--green-color);
+                        color:var(--bg-primary);
                     }
                 }
             }
