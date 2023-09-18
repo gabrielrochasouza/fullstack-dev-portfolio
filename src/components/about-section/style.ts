@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import ReactIcon from "../../assets/svg/react-icon.svg"
+import CodeIcon from "../../assets/svg/code-icon.svg"
 
 export const AboutContainer = styled.section`
     background-size: contain;
-    background-image: url(${ReactIcon});
+    background-image: url(${CodeIcon});
     background-position: center center;
     background-repeat: no-repeat;
     .about-me{
@@ -80,7 +80,9 @@ export const AboutContainer = styled.section`
             }
         }
         .col-right{
-            padding: 80px 0 0;
+            padding: 0px 0 0;
+            background-color: var(--green-color);
+            border-radius: 20px;
             @media (max-width:1170px) {
                 display:none;
 
@@ -89,16 +91,12 @@ export const AboutContainer = styled.section`
                 overflow: hidden;
                 height: 300px;
                 width: 300px;
-                background-color: var(--green-color);
                 border-radius: 20px;
                 border-spacing: 20px;
                 transition: 1s all;
-                filter: grayscale(1);
-                box-shadow: #000 20px 20px 0 0 ;
+                box-shadow: #6eff632b 20px 20px 0 0 ;
                 border: 2px solid #000;
                 opacity: 0.7;
-                
- 
                 @media (max-width:425px) {
                     border-radius: 50%;
                     height: 220px;
@@ -122,7 +120,7 @@ export const AboutContainer = styled.section`
                 }
             }
             figure:hover{
-                filter: grayscale(0);
+                filter: grayscale(0.8);
                 transition: 1s all;
                 opacity: 1;
                 box-shadow: #000 10px 10px 0 0 ;
