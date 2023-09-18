@@ -13,7 +13,7 @@ export const ControllerContainer = styled.div`
         padding-left:30px;
         display: flex;
         gap: 8px;
-        max-width: 1200px;
+        max-width: var(--max-c-w);;
         margin: 0 auto;
         button {
             display:flex;
