@@ -23,6 +23,9 @@ const GlobalStyle = createGlobalStyle`
         font-family: var(--t-p);
         overflow-x: hidden;
     }
+    #root {
+        overflow: hidden;
+    }
     button{
         cursor: pointer;
     }
