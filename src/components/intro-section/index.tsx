@@ -28,11 +28,12 @@ export const IntroSection = () => {
           data-aos-duration="500"
           data-aos-once={false}
         >
-          Eu sou um desenvolvedor web Full Stack Brasil,
-          estudei na Kenzie Academy, e desenvolvi vários projetos
-          e tive várias experiências trabalhando em grupo, no total
-          foram mais 2000 horas de curso.
-          Atualmente estou em busca de uma oportunidade na área.{" "}
+          Eu sou um desenvolvedor web fullstack,
+          estudei na Kenzie Academy Brasil, e completei o
+          curso de desenvolvimento fullstack de 2000 horas. 
+          Além disso, já desenvolvi diversos projetos pessoais.
+          Atualmente estou atuando como programador fullstack
+          na empresa Exati Tecnologia.{" "}
         </p>
 
         <div className="icons">
