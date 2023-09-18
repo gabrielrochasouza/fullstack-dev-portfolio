@@ -1,26 +1,22 @@
 import Logo from "../logo";
 import { Container } from "./style";
 import "aos/dist/aos.css"; // You can also use <link> for styles
-import { useNavigate } from "react-router-dom";
 import BurgerMenu from "../burger-menu";
 
 export const Header = () => {
-  const navigate = useNavigate();
 
   return (
     <Container>
       <div className="container">
         <div
-          onClick={() => {
-            navigate("/");
-            window.scrollTo(0, 0);
-          }}
           data-aos="fade-down"
           data-aos-offset="-100"
           data-aos-once={"True"}
           className="logo"
         >
-          <Logo />
+          <a href='#inicio'>
+            <Logo />
+          </a>
         </div>
         <nav>
           <ul>

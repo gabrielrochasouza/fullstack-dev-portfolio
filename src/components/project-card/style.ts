@@ -25,6 +25,10 @@ export const Container = styled.div`
             margin: 0 0 -22px;
             
         }
+        @media (min-width: 1768px) {
+            width: 600px;
+            height: 320px;
+        }
         img{
             opacity: 0.6;
             object-fit: cover;
@@ -59,6 +63,9 @@ export const Container = styled.div`
         .proj-desc{
             font-size: 0.8rem;
             color: var(--text-primary-grey);
+        }
+        @media (min-width: 1768px) {
+            max-width: 450px;
         }
         @media (max-width: 768px) {
             border-radius: 0px;
