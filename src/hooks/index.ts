@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
 const SECTIONS = ['intro', 'about', 'project', 'contact'];
-const PAGE_SCROLL_INTERVAL = 300;
+const PAGE_SCROLL_INTERVAL = 800;
 const DEFAULT_SECTION_INDEX = 0;
 const LOCAL_HASH = document.location.hash.slice(1);
 
@@ -85,6 +85,7 @@ export const ScrollHook = () => {
     document.addEventListener('keydown', keyDown);
     document.addEventListener('touchstart', touchStart)
     document.addEventListener('touchend', touchEnd)
+    movePage(SECTIONS[CURRENT_SECTION_INDEX]);
     return ()=> {
       document.removeEventListener('wheel', roll);
       document.removeEventListener('keydown', keyDown);
