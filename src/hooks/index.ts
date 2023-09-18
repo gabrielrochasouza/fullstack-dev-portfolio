@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
 const SECTIONS = ['intro', 'about', 'project', 'contact'];
-const PAGE_SCROLL_INTERVAL = 1000;
+const PAGE_SCROLL_INTERVAL = 300;
 const DEFAULT_SECTION_INDEX = 0;
 const LOCAL_HASH = document.location.hash.slice(1);
 
@@ -70,10 +70,11 @@ const touchStart = (touch: TouchEvent) => {
 const touchEnd = (touch: TouchEvent) => {
   const touchEndScreenY = touch.changedTouches[0].screenY;
   const swipe = touchEndScreenY - TOUCH_START_SCREENY;
-  if (swipe > 80) {
+  const swipeLength = 40
+  if (swipe > swipeLength) {
     return scrollUp();
   } 
-  if (swipe < -80) {
+  if (swipe < -swipeLength) {
     return scrollDown();
   }
 }

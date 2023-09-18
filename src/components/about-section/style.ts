@@ -4,7 +4,7 @@ import ReactIcon from "../../assets/svg/react-icon.svg"
 export const AboutContainer = styled.section`
     background-size: contain;
     background-image: url(${ReactIcon});
-    background-position: top center;
+    background-position: center center;
     background-repeat: no-repeat;
     .about-me{
         min-height: 100vh;
