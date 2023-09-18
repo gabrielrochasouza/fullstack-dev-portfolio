@@ -1,5 +1,4 @@
 import {SectionContainer} from './style'
-import React from 'react'
 
 const ExperienceSection = ()=>{
 

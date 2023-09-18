@@ -1,5 +1,4 @@
 import { FaGithub } from "react-icons/fa";
-import React from 'react'
 import { BiLinkExternal } from "react-icons/bi";
 import { Container } from "./style";
 import "aos/dist/aos.css"; // You can also use <link> for styles
