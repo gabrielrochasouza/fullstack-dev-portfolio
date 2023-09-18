@@ -4,7 +4,7 @@ export const Container = styled.header`
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: rgb(6, 6, 6, 0.8);
+    background-color: rgb(6, 6, 6, 0);
     z-index: 200;
     transition: 1s all;
     .container{

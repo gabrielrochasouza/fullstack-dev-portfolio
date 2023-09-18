@@ -4,6 +4,7 @@ import CodeIcon from "../../assets/svg/code-icon.svg"
 export const AboutContainer = styled.section`
     background-size: contain;
     background-image: url(${CodeIcon});
+    background-color: #6eff6312;
     background-position: center center;
     background-repeat: no-repeat;
     .about-me{
@@ -137,10 +138,10 @@ export const AboutContainer = styled.section`
                     font-size: 37px;
                     transition: 200ms all;
                     color: var(--green-color);
-                    :hover{
-                        transition: 200ms all;
-                        color: #fff;
-                    }
+                }
+                svg:hover{
+                    transition: 200ms all;
+                    color: #fff;
                 }
                 @media (max-width:768px) {
                     margin: 20px 0 0;

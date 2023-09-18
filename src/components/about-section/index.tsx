@@ -7,7 +7,6 @@ import {
   FaJsSquare,
   FaGit,
   FaNode,
-  FaWordpress,
   FaReact,
   
 } from "react-icons/fa";
@@ -21,7 +20,6 @@ const AboutSection = () => {
     FaJsSquare,
     FaGit,
     FaNode,
-    FaWordpress,
     FaReact,
     SiRedux,
     SiTypescript,
