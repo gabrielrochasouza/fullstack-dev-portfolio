@@ -23,7 +23,14 @@ const intervalBetweenScrolls = async () => {
   )
 }
 
+const updateCurrentSectionIndex = ()=>{
+  if (document.location.hash && SECTIONS.includes(document.location.hash.slice(1))) {
+    CURRENT_SECTION_INDEX = SECTIONS.findIndex(section => section === document.location.hash.slice(1))
+  }
+}
+
 export const scrollDown = async () => {
+  updateCurrentSectionIndex()
   if ((CURRENT_SECTION_INDEX < SECTIONS.length - 1) && IS_ABLE_TO_SCROLL) {
     CURRENT_SECTION_INDEX++
     IS_ABLE_TO_SCROLL = false
@@ -35,6 +42,7 @@ export const scrollDown = async () => {
 }
 
 export const scrollUp = async () => {
+  updateCurrentSectionIndex()
   if ((CURRENT_SECTION_INDEX !== 0) && IS_ABLE_TO_SCROLL) {
     CURRENT_SECTION_INDEX--
     IS_ABLE_TO_SCROLL = false
@@ -85,6 +93,7 @@ export const ScrollHook = () => {
     document.addEventListener('keydown', keyDown);
     document.addEventListener('touchstart', touchStart)
     document.addEventListener('touchend', touchEnd)
+    CURRENT_SECTION_INDEX = SECTIONS.some(s => s === LOCAL_HASH) ? SECTIONS.findIndex(s => s === LOCAL_HASH) : DEFAULT_SECTION_INDEX;
     movePage(SECTIONS[CURRENT_SECTION_INDEX]);
     return ()=> {
       document.removeEventListener('wheel', roll);
