@@ -1,6 +1,16 @@
 import { BurgerContainer } from "./style";
 
-const BurgerMenu = () => {
+interface IBurgerMenu {
+  menuItems: {
+    id: string,
+    name: string,
+    title: string,
+    href: string,
+    isButton: boolean,
+  }[]
+}
+
+const BurgerMenu = ({menuItems}: IBurgerMenu) => {
   return (
     <BurgerContainer>
       <label htmlFor="check" className="bar">
@@ -10,46 +20,22 @@ const BurgerMenu = () => {
         <span className="bottom"></span>
         <div className="mobile-menu">
           <ul className="menu-items">
-            <li>
-              <a 
-                href="#intro" 
-                style={{color: document.location.hash === '#intro' ? "var(--green-color)" : "#fff"}}
-              >
-                Início
-              </a>
-            </li>
-            <li>
-              <a 
-                href="#about" 
-                style={{color: document.location.hash === '#about' ? "var(--green-color)" : "#fff"}}
-              >
-                Sobre
-              </a>
-            </li>
-            <li>
-              <a 
-                href="#contact" 
-                style={{color: document.location.hash === '#contact' ? "var(--green-color)" : "#fff"}}
-              >
-                Contato
-              </a>
-            </li>
-            <li>
-              <a 
-                href="#project" 
-                style={{color: document.location.hash === '#project' ? "var(--green-color)" : "#fff"}}
-              >
-                Projetos
-              </a>
-            </li>
-            <li>
-              <a
-                target={"_blank"}
-                href="https://drive.google.com/file/d/1SqAM0VZTf_r1eDowagdvjrAqT9zni97H/view?usp=sharing"
-              >
-                Currículo
-              </a>
-            </li>
+            {menuItems?.map((item, index)=> (
+              <li key={index + item.id}>
+                <a
+                  target={item.isButton ? '_blank' : ''}
+                  rel={item.isButton ? 'noreferrer' : ''}
+                  href={item.href}
+                  style={{color: (document.location.hash === item.id || item.isButton) ? "var(--green-color)" : "#fff"}}
+                  onClick={()=> {
+                    const input = document.getElementById('check')
+                    input?.click()
+                  }}
+                >
+                  {item.title}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       </label>
