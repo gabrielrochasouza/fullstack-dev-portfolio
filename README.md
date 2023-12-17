@@ -1,6 +1,6 @@
 # FullStack Portfolio
 
-This is my fullstack portfolio to showcase some of my products and talk a little bit about me!
+This is my fullstack portfolio to showcase some of my front end skills and talk a little bit about me!
 
 Hope you enjoy!!
 
