@@ -9,8 +9,22 @@ const ContactSection = ()=>{
         <>
             <Container id="contact">
                 <span>Envie um email</span>
-                <h3>Entre em Contato</h3>
-                <form action="https://formsubmit.co/grsouza135@gmail.com" method="POST">
+                <h3
+                    data-aos="fade-down"
+                    data-aos-delay="800"
+                    data-aos-duration="1000"
+                    data-aos-once={"false"}
+                >
+                    Entre em Contato
+                </h3>
+                <form 
+                    action="https://formsubmit.co/grsouza135@gmail.com" 
+                    method="POST"
+                    data-aos="fade-down"
+                    data-aos-delay="800"
+                    data-aos-duration="1000"
+                    data-aos-once={"false"}
+                >
                     <div className="input-group">
                         <input placeholder=" " required type="text" name="name" className="input"/>
                         <label className="user-label">Nome<span>*</span></label>
