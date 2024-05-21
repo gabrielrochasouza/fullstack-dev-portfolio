@@ -8,9 +8,16 @@ const ContactSection = ()=>{
     return(
         <>
             <Container id="contact">
-                <span>Envie um email</span>
+                <span
+                    data-aos="fade-in"
+                    data-aos-delay="1600"
+                    data-aos-duration="1000"
+                    data-aos-once={"false"}
+                >
+                    Envie um email
+                </span>
                 <h3
-                    data-aos="fade-down"
+                    data-aos="fade-in"
                     data-aos-delay="800"
                     data-aos-duration="1000"
                     data-aos-once={"false"}
@@ -45,7 +52,15 @@ const ContactSection = ()=>{
                     <input type="hidden" name="_subject" value={subject}></input>
                     <input type="hidden" name="_template" value="table"></input>
                     
-                    <button type="submit">Enviar</button>
+                    <button
+                        type="submit"
+                        data-aos="fade-in"
+                        data-aos-delay="1200"
+                        data-aos-duration="1000"
+                        data-aos-once={"false"}
+                    >
+                        Enviar
+                    </button>
                 </form>
                 
                 <Footer/>
