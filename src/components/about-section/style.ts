@@ -13,9 +13,9 @@ export const AboutContainer = styled.section`
         max-width: var(--max-c-w);
         margin: 0px auto 0px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        gap: 100px;
+        gap: 50px;
         flex-wrap: wrap-reverse;
         position: relative;
         @media (max-width:1170px) {
@@ -29,7 +29,7 @@ export const AboutContainer = styled.section`
             color: #fff ;
         }
         .col-left{
-            max-width: 700px;
+            max-width: 800px;
             @media (max-width:568px) {
                 padding: 40px 20px;
             }
