@@ -10,16 +10,16 @@ const ContactSection = ()=>{
             <Container id="contact">
                 <span
                     data-aos="fade-in"
-                    data-aos-delay="1600"
-                    data-aos-duration="1000"
+                    data-aos-delay="100"
+                    data-aos-duration="500"
                     data-aos-once={"false"}
                 >
                     Envie um email
                 </span>
                 <h3
                     data-aos="fade-in"
-                    data-aos-delay="800"
-                    data-aos-duration="1000"
+                    data-aos-delay="100"
+                    data-aos-duration="500"
                     data-aos-once={"false"}
                 >
                     Entre em Contato
@@ -28,8 +28,8 @@ const ContactSection = ()=>{
                     action="https://formsubmit.co/grsouza135@gmail.com" 
                     method="POST"
                     data-aos="fade-down"
-                    data-aos-delay="800"
-                    data-aos-duration="1000"
+                    data-aos-delay="100"
+                    data-aos-duration="500"
                     data-aos-once={"false"}
                 >
                     <div className="input-group">
@@ -55,8 +55,8 @@ const ContactSection = ()=>{
                     <button
                         type="submit"
                         data-aos="fade-in"
-                        data-aos-delay="1200"
-                        data-aos-duration="1000"
+                        data-aos-delay="100"
+                        data-aos-duration="700"
                         data-aos-once={"false"}
                     >
                         Enviar
